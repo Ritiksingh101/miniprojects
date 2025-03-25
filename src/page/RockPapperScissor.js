@@ -1,4 +1,5 @@
-import React, { useState } from 'react'
+import React, { useContext, useState } from 'react'
+import { Data } from './Context'
 
 function RockPapperScissor() {
     const choose = ["Rock", "Paper", "Scisor"]

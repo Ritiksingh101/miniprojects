@@ -14,6 +14,7 @@ app.use(express.json({ extended: false, limit: "50mb" }));
 
 app.use("/api/todo", require("./routes/todo"));
 app.use("/api/kbc", require("./routes/kbc"));
+app.use("/api/mine", require("./routes/mine"));
 
 
 const PORT = process.env.PORT || 5001;

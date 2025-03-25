@@ -1,7 +1,9 @@
-import React, { useState } from 'react'
+import React, { useContext, useState } from 'react'
+// import { Context } from './page/MyContext'
 
 function Calculator() {
     const [value, setValue]= useState("")
+    // const {click, setClick} = useContext(Context)
     return (
         <div className='main'>
             <div className='container'>

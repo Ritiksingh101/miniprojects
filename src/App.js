@@ -10,11 +10,17 @@ import Todo from './page/Todo'
 import Todolis from './page/Todolis'
 import Kbc from './page/Kbc'
 import Adminkbc from './page/Adminkbc'
+import Context from './page/Context'
+import Mines from './page/Mines'
+
+
+
 
 
 
 function App() {
   return (
+    <Context>
     <HashRouter>
      <Routes>
       <Route path='/home' element={<Home/>}></Route>
@@ -27,13 +33,16 @@ function App() {
       <Route path='/todo-list' element={<Todolis/>}></Route>
       <Route path='/kbc' element={<Kbc/>}></Route>
       <Route path='/kbcadmin' element={<Adminkbc/>}></Route>
-      <Route path='/array' element={<Array/>}></Route>
+      <Route path='/mines' element={<Mines/>}></Route>
+      {/* <Route path='/array' element={<Array/>}></Route> */}
 
       
       
     
      </Routes>
     </HashRouter>
+    </Context>
+    
   )
 }
 
